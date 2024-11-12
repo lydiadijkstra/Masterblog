@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #F5F5F5;
@@ -10,6 +11,7 @@ h1 {
     color: #4F4F4F;
 }
 
+/* Styling for posts on index page */
 .post {
     background-color: #FFF;
     border: 1px solid #DDD;
@@ -24,4 +26,61 @@ h1 {
 
 .post p {
     margin: 10px 0;
+}
+
+/* Styling for add.html form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #C060A1;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #A84884;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #C060A1; /* Dark rose */
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #A84884; /* Darker rose */
 }
