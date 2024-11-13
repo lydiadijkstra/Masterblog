@@ -1,4 +1,4 @@
-/* General Styles */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #F5F5F5;
@@ -6,12 +6,13 @@ body {
     color: #333;
 }
 
-h1 {
+/* Headings */
+h1, h2 {
     text-align: center;
     color: #4F4F4F;
 }
 
-/* Styling for posts on index page */
+/* Post styling */
 .post {
     background-color: #FFF;
     border: 1px solid #DDD;
@@ -28,8 +29,8 @@ h1 {
     margin: 10px 0;
 }
 
-/* Styling for add.html form */
-form {
+/* Form container styling for add, update, and delete */
+form, .confirmation-form {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
@@ -39,22 +40,37 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
 label {
     display: block;
     font-weight: bold;
     margin-top: 10px;
 }
 
-input[type="text"] {
+/* Input styling */
+input[type="text"], textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 20px;
     border: 1px solid #CCC;
     border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
 }
 
-input[type="submit"] {
+/* Submit button styling */
+input[type="submit"], .button {
     width: 100%;
     padding: 10px;
     background-color: #C060A1;
@@ -66,21 +82,32 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+/* Hover effect for submit and button */
+input[type="submit"]:hover, .button:hover {
     background-color: #A84884;
 }
 
-.button {
-    padding: 10px 20px;
-    background-color: #C060A1; /* Dark rose */
-    color: white;
-    text-align: center;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+/* Button container for aligned buttons */
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
-.button:hover {
-    background-color: #A84884; /* Darker rose */
+/* Individual button style */
+.button {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #C060A1;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Confirmation message styling for delete */
+.confirmation-message {
+    text-align: center;
+    font-size: 18px;
+    color: #4F4F4F;
+    margin-bottom: 20px;
 }

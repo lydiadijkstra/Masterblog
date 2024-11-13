@@ -8,12 +8,16 @@
 </head>
 <body>
     <h1>Welcome to My Flask Blog!</h1>
-    <a href="/add" class="button">Click here to enter your own post</a><br><br>
+    <a href="/add" class="button">Click here to enter your own post</a><br><br><br>
     {% for post in post %}
         <div class="post">
             <h2>{{ post["title"] }}</h2>
             <p><em>Written by: {{ post["author"] }}</em></p>
-            <p>{{ post["content"] }}</p>
+            <p>{{ post["content"] }}</p><br>
+            <div class="button-container">
+                <a href="{{ url_for('delete_confirmation', post_id=post['id']) }}" class="button">Click here to delete this post</a><br><br>
+                <a href="{{ url_for('update', post_id=post['id']) }}" class="button">Click here to update this post</a><br><br>
+            </div>
         </div>
     {% endfor %}
 </body>

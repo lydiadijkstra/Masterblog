@@ -1,32 +1,14 @@
 [
     {
         "id": 1,
-        "author": "John Doe",
-        "title": "First Post",
-        "content": "This is my first post"
+        "author": "Lydia",
+        "title": "My very first Blog Post",
+        "content": "Very exited to post on my very own blog."
     },
     {
         "id": 2,
-        "author": "Jane Doe",
-        "title": "Second Post",
-        "content": "This is my second post"
-    },
-    {
-        "id": 3,
-        "author": "lydia",
-        "title": "new post",
-        "content": "hi guys, this is my newest post. Enjoy reading!"
-    },
-    {
-        "id": 4,
-        "author": "lydia",
-        "title": "a newer post created",
-        "content": "this is again a new post. 13.11.24 00:06"
-    },
-    {
-        "id": 5,
-        "author": "ich wieder",
-        "title": "erneut ein post",
-        "content": "was soll ch denn nun schreiben"
+        "author": "Hans",
+        "title": "Happy",
+        "content": "Nice Nice "
     }
 ]
