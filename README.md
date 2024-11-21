@@ -36,7 +36,10 @@ Routes
 File Structure
 
 app.py: Main Flask application file with route definitions.
+
 blogpost_storage.py: Module for handling blog post data storage and retrieval.
+
 templates/: Folder containing HTML templates for different pages (index, add, update, delete).
+
 static/: Folder containing CSS files for styling.
 
